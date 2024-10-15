@@ -1,0 +1,9 @@
+
+config BR2_PACKAGE_AESD_SOCKET
+	bool "aesd-socket"
+	help
+          Listens on port 9000, starts a thread when a socket is opened,
+ 	  accepts a char stream "TIMEOUT:<seconds>,MESSAGE:<message_body>\n".
+	  the message body is sent to ttyS1 and waits the timeout value for
+	  a response over ttyS1. If one is recieved it is streamed back over
+	  the socket.

@@ -114,7 +114,7 @@
 				atmel,use-dma-rx;
 				atmel,use-dma-tx;
 				status = "okay";
-				current-speed = <115200>;
+				
 			};
 
 			pwm0: pwm@f802c000 {
